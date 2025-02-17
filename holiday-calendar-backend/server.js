@@ -16,6 +16,10 @@
 
    const Holiday = mongoose.model('Holiday', holidaySchema);
 
+   app.get('/', async (req, res) => {
+    res.redirect('http://localhost:8000/holidays');
+   });
+
    app.get('/holidays', async (req, res) => {
        const holidays = await Holiday.find();
        res.json(holidays);

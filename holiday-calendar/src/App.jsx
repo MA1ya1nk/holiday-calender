@@ -1,7 +1,7 @@
    // src/App.jsx
    import React from 'react';
    //import Calendar from './Calendar';
-   import Calendar from './calendar';
+   import Calendar from './Calendar';
    import './App.css'; // Ensure Tailwind CSS is imported
 
    function App() {
